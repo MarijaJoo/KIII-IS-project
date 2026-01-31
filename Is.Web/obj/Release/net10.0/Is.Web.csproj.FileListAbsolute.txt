@@ -413,10 +413,10 @@ D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\static
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\staticwebassets.development.json
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\staticwebassets.build.endpoints.json
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\swae.build.ex.cache
-D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\staticwebassets.upToDateCheck.txt
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\Is.Web.csproj.Up2Date
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\Is.Web.dll
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\refint\Is.Web.dll
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\Is.Web.pdb
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\Is.Web.genruntimeconfig.cache
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\ref\Is.Web.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Release\net10.0\Is.Web.sourcelink.json

@@ -15,3 +15,4 @@ D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Release\net10.0\I
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Release\net10.0\refint\Is.Services.dll
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Release\net10.0\Is.Services.pdb
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Release\net10.0\ref\Is.Services.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Release\net10.0\Is.Services.sourcelink.json

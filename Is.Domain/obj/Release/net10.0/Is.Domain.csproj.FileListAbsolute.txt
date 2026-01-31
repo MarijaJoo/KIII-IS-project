@@ -10,3 +10,4 @@ D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Domain\obj\Release\net10.0\Is.
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Domain\obj\Release\net10.0\refint\Is.Domain.dll
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Domain\obj\Release\net10.0\Is.Domain.pdb
 D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Domain\obj\Release\net10.0\ref\Is.Domain.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Domain\obj\Release\net10.0\Is.Domain.sourcelink.json

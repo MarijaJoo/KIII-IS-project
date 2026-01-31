@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|d:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\is.web\\is.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|solutionrelative:is.web\\is.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E5E4D60A-B064-4285-88A7-CA202D654B93}|Is.Services\\Is.Services.csproj|d:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\is.services\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E4D60A-B064-4285-88A7-CA202D654B93}|Is.Services\\Is.Services.csproj|solutionrelative:is.services\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|d:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\is.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|d:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\is.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|solutionrelative:is.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|d:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\is.web\\is.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|solutionrelative:is.web\\is.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81095792-CA51-6888-35A2-28FF455ADB03}|Is.Web\\Is.Web.csproj|d:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\is.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,14 +47,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Is.Web",
-              "DocumentMoniker": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Is.Web.csproj",
-              "RelativeDocumentMoniker": "Is.Web\\Is.Web.csproj",
-              "ToolTip": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Is.Web.csproj",
-              "RelativeToolTip": "Is.Web\\Is.Web.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-28T00:18:36.4Z",
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\Implementation\\CourseService.cs",
+              "RelativeDocumentMoniker": "Is.Services\\Implementation\\CourseService.cs",
+              "ToolTip": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\Implementation\\CourseService.cs",
+              "RelativeToolTip": "Is.Services\\Implementation\\CourseService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T14:38:22.451Z",
               "EditorCaption": ""
             },
             {
@@ -61,7 +65,7 @@
               "RelativeDocumentMoniker": "Is.Web\\appsettings.Development.json",
               "ToolTip": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\appsettings.Development.json",
               "RelativeToolTip": "Is.Web\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-28T01:55:32.976Z",
               "EditorCaption": ""
@@ -74,9 +78,22 @@
               "RelativeDocumentMoniker": "Is.Web\\appsettings.json",
               "ToolTip": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\appsettings.json",
               "RelativeToolTip": "Is.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-28T01:55:30.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Is.Web.csproj",
+              "DocumentMoniker": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Is.Web.csproj",
+              "RelativeDocumentMoniker": "Is.Web\\Is.Web.csproj",
+              "ToolTip": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Is.Web.csproj",
+              "RelativeToolTip": "Is.Web\\Is.Web.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-28T00:18:36.4Z",
               "EditorCaption": ""
             },
             {
@@ -87,14 +104,14 @@
               "RelativeDocumentMoniker": "Is.Web\\Program.cs",
               "ToolTip": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Program.cs",
               "RelativeToolTip": "Is.Web\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-28T00:16:08.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IsApplicationUser.cs",
               "DocumentMoniker": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Identity\\IsApplicationUser.cs",
               "RelativeDocumentMoniker": "Is.Domain\\Identity\\IsApplicationUser.cs",
@@ -102,12 +119,11 @@
               "RelativeToolTip": "Is.Domain\\Identity\\IsApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T23:38:42.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T23:38:42.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Is.Web\\Controllers\\AccountController.cs",
@@ -115,12 +131,11 @@
               "RelativeToolTip": "Is.Web\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAcwE4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T23:23:19.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T23:23:19.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Web\\Controllers\\API\\AdminController.cs",
               "RelativeDocumentMoniker": "Is.Web\\Controllers\\API\\AdminController.cs",
@@ -128,8 +143,7 @@
               "RelativeToolTip": "Is.Web\\Controllers\\API\\AdminController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T21:49:36.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T21:49:36.012Z"
             }
           ]
         }

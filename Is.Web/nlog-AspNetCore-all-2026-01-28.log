@@ -15809,3 +15809,1001 @@ ORDER BY [s].[Id], [s].[Id0], [s0].[Id]
    at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
    at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
    at Program.<Main>$(String[] args) in D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\Program.cs:line 76
+2026-01-28 11:03:35.6244|0|DEBUG|Is.Web.Program|init main 
+2026-01-28 11:03:37.7685|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2026-01-28 11:03:41.1768|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2026-01-28 11:03:41.1768|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2026-01-28 11:03:42.4513|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 10.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:10.0.2' with options: EngineType=SqlServer  
+2026-01-28 11:03:43.3787|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2026-01-28 11:03:43.6759|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (274ms). 
+2026-01-28 11:03:43.6759|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:43.7171|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:45.8621|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:45.8783|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2026-01-28 11:03:45.9096|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (13ms). 
+2026-01-28 11:03:45.9096|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (41ms). 
+2026-01-28 11:03:45.9368|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2026-01-28 11:03:46.0075|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (79ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2026-01-28 11:03:46.0144|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:46.0432|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'isDb' on server 'localhost\SQLEXPRESS01' (22ms). 
+2026-01-28 11:03:46.0432|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:46.0452|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:46.0452|20411|INFO|Microsoft.EntityFrameworkCore.Migrations|Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long. 
+2026-01-28 11:03:46.0452|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2026-01-28 11:03:46.0452|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2026-01-28 11:03:46.0452|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (0ms). 
+2026-01-28 11:03:46.0452|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result 
+2026-01-28 11:03:46.6723|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (620ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result 
+2026-01-28 11:03:46.9143|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2026-01-28 11:03:46.9273|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2026-01-28 11:03:46.9273|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2026-01-28 11:03:46.9273|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2026-01-28 11:03:46.9273|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (1ms). 
+2026-01-28 11:03:46.9273|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END; 
+2026-01-28 11:03:46.9436|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END; 
+2026-01-28 11:03:46.9436|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2026-01-28 11:03:46.9516|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2026-01-28 11:03:46.9516|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2026-01-28 11:03:46.9516|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2026-01-28 11:03:46.9516|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2026-01-28 11:03:46.9516|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2026-01-28 11:03:46.9516|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2026-01-28 11:03:46.9516|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2026-01-28 11:03:46.9516|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2026-01-28 11:03:46.9516|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2026-01-28 11:03:46.9516|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2026-01-28 11:03:46.9516|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2026-01-28 11:03:46.9516|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (0ms). 
+2026-01-28 11:03:46.9516|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2026-01-28 11:03:46.9516|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2026-01-28 11:03:46.9695|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2026-01-28 11:03:46.9695|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:03:46.9695|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:03:46.9695|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2026-01-28 11:03:47.0161|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2026-01-28 11:03:47.0161|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:47.0161|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'isDb' on server 'localhost\SQLEXPRESS01' is being disposed after spending 5ms reading results. 
+2026-01-28 11:03:47.0314|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2026-01-28 11:03:47.0314|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2026-01-28 11:03:47.0314|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2026-01-28 11:03:47.0314|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2026-01-28 11:03:47.0314|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2026-01-28 11:03:47.0314|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (0ms). 
+2026-01-28 11:03:47.0314|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result 
+2026-01-28 11:03:47.3955|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (360ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result 
+2026-01-28 11:03:47.3955|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2026-01-28 11:03:47.3955|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:47.3955|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'isDb' on server 'localhost\SQLEXPRESS01' (0ms). 
+2026-01-28 11:03:47.3955|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2026-01-28 11:03:47.4040|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:47.4040|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (1ms). 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Courses/AddCourseToCard.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Courses/Create.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Courses/Delete.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Courses/Details.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Courses/Edit.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Courses/Index.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/MyCoursesCards/Index.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_LoginPartial.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_Layout.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'. 
+2026-01-28 11:03:47.7540|3|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2026-01-28 11:03:47.8778|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2026-01-28 11:03:48.0212|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Marija\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-01-28 11:03:49.4729|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2026-01-28 11:03:49.5028|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Marija\AppData\Local\ASP.NET\DataProtection-Keys\key-67ac30fc-f742-4e39-8d21-403d86e3ab5c.xml'. 
+2026-01-28 11:03:49.5227|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {67ac30fc-f742-4e39-8d21-403d86e3ab5c}. 
+2026-01-28 11:03:49.5551|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with expiration date 2026-04-20 15:44:29Z as default key. 
+2026-01-28 11:03:49.5551|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2026-01-28 11:03:49.5620|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2026-01-28 11:03:49.5620|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2026-01-28 11:03:49.5620|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2026-01-28 11:03:49.5620|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2026-01-28 11:03:49.5620|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} as the default key. 
+2026-01-28 11:03:49.5620|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} was loaded during application startup. 
+2026-01-28 11:03:49.6778|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 10.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:10.0.2' with options: EngineType=SqlServer  
+2026-01-28 11:03:50.4112|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<EmailMessage>()
+    .Where(z => !(z.status))' 
+2026-01-28 11:03:52.7256|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<EmailMessage>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IPropertyBase, int> { [Property: EmailMessage.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: EmailMessage.Content (string), 1], [Property: EmailMessage.MailTo (string), 2], [Property: EmailMessage.Subject (string), 3], [Property: EmailMessage.status (bool) Required, 4] }
+        SELECT e.Id, e.Content, e.MailTo, e.Subject, e.status
+        FROM EmailMessages AS e
+        WHERE Not(e.status)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IPropertyBase, int> { [Property: EmailMessage.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: EmailMessage.Content (string), 1], [Property: EmailMessage.MailTo (string), 2], [Property: EmailMessage.Subject (string), 3], [Property: EmailMessage.status (bool) Required, 4] }
+        SELECT e.Id, e.Content, e.MailTo, e.Subject, e.status
+        FROM EmailMessages AS e
+        WHERE Not(e.status), 
+        False, 
+        MultipleParameters
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: [LIFTABLE Constant: ReaderColumn[] { ReaderColumn<Guid>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<bool> } | Resolver: namelessParameter{0} => new ReaderColumn[]
+    { 
+        new ReaderColumn<Guid>(
+            False, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage").FindProperty("Id"), 
+            (dataReader, indexMap) => dataReader.GetGuid(0)
+        ), 
+        new ReaderColumn<object>(
+            True, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage").FindProperty("Content"), 
+            (dataReader, indexMap) => (object)dataReader.GetString(1)
+        ), 
+        new ReaderColumn<object>(
+            True, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage").FindProperty("MailTo"), 
+            (dataReader, indexMap) => (object)dataReader.GetString(2)
+        ), 
+        new ReaderColumn<object>(
+            True, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage").FindProperty("Subject"), 
+            (dataReader, indexMap) => (object)dataReader.GetString(3)
+        ), 
+        new ReaderColumn<bool>(
+            False, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage").FindProperty("status"), 
+            (dataReader, indexMap) => dataReader.GetBoolean(4)
+        ) 
+    }], 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        EmailMessage entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            EmailMessage instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(EmailMessage);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: EmailMessage.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetGuid(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (EmailMessage)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: EmailMessage | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: EmailMessage | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage")]: 
+                        {
+                            return 
+                            {
+                                EmailMessage instance;
+                                instance = new EmailMessage();
+                                instance.<Id>k__BackingField = dataReader.GetGuid(0);
+                                instance.<Content>k__BackingField = dataReader.IsDBNull(1) ? default(string) : (string)dataReader.GetFieldValue<object>(1);
+                                instance.<MailTo>k__BackingField = dataReader.IsDBNull(2) ? default(string) : (string)dataReader.GetFieldValue<object>(2);
+                                instance.<Subject>k__BackingField = dataReader.IsDBNull(3) ? default(string) : (string)dataReader.GetFieldValue<object>(3);
+                                instance.<status>k__BackingField = dataReader.GetBoolean(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: EmailMessage | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Is.Domain.Email.EmailMessage")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(EmailMessage)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: Is.Repository.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)' 
+2026-01-28 11:03:52.8191|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2026-01-28 11:03:52.8191|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2026-01-28 11:03:52.8191|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:52.8191|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:52.8191|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2026-01-28 11:03:52.8191|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:03:52.8191|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:03:52.8191|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Content], [e].[MailTo], [e].[Subject], [e].[status]
+FROM [EmailMessages] AS [e]
+WHERE [e].[status] = CAST(0 AS bit) 
+2026-01-28 11:03:52.8669|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Content], [e].[MailTo], [e].[Subject], [e].[status]
+FROM [EmailMessages] AS [e]
+WHERE [e].[status] = CAST(0 AS bit) 
+2026-01-28 11:03:53.0189|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'EmailMessage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2026-01-28 11:03:53.0951|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'EmailMessage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2026-01-28 11:03:53.0951|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'EmailMessage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2026-01-28 11:03:53.0951|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:53.0951|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'isDb' on server 'localhost\SQLEXPRESS01' is being disposed after spending 203ms reading results. 
+2026-01-28 11:03:53.0951|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:53.0951|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'isDb' on server 'localhost\SQLEXPRESS01' (0ms). 
+2026-01-28 11:03:57.5601|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2026-01-28 11:03:57.5601|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:03:57.5601|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2026-01-28 11:03:57.5740|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BlazorWasmHotReloadMiddleware|Middleware loaded 
+2026-01-28 11:03:57.5793|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware|Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16497 B). 
+2026-01-28 11:03:57.5793|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware|Middleware loaded. Script /_framework/blazor-hotreload.js (799 B). 
+2026-01-28 11:03:57.8377|7|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True} 
+2026-01-28 11:03:57.8377|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2026-01-28 11:03:57.8611|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true 
+2026-01-28 11:03:58.0035|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7083 
+2026-01-28 11:03:58.0035|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5134 
+2026-01-28 11:03:58.0035|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Is.Web 
+2026-01-28 11:03:58.0035|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2026-01-28 11:03:58.0035|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2026-01-28 11:03:58.0035|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2026-01-28 11:03:58.0158|2|DEBUG|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider|Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v10.0.0.0. 
+2026-01-28 11:03:58.0158|2|DEBUG|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider|Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v10.0.0.0. 
+2026-01-28 11:03:58.0354|2|DEBUG|Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider|Executing API description provider 'JsonPatchOperationsArrayProvider' from assembly Microsoft.AspNetCore.Mvc.NewtonsoftJson v10.0.2.0. 
+2026-01-28 11:03:58.1150|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-01-28 11:03:58.1150|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-01-28 11:03:58.1150|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web 
+2026-01-28 11:03:58.1150|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2026-01-28 11:03:58.3206|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNIUAI6TG53S" received FIN. 
+2026-01-28 11:03:58.3313|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNIUAI6TG53S" accepted. 
+2026-01-28 11:03:58.3313|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNIUAI6TG53S" started. 
+2026-01-28 11:03:58.3541|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-01-28 11:03:58.4051|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNIUAI6TG53S" stopped. 
+2026-01-28 11:03:58.4051|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNIUAI6TG53S" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2026-01-28 11:03:59.2112|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNIUAI6TG53T" accepted. 
+2026-01-28 11:03:59.2112|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNIUAI6TG53T" started. 
+2026-01-28 11:03:59.3455|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNIUAI6TG53T established using the following protocol: Tls12 
+2026-01-28 11:03:59.4409|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2026-01-28 11:03:59.4409|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2026-01-28 11:03:59.4409|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2026-01-28 11:03:59.4409|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2026-01-28 11:03:59.4409|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2026-01-28 11:03:59.4409|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 1 with length 1413 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:03:59.5047|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2026-01-28 11:03:59.5521|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/ - - - 
+2026-01-28 11:04:00.3142|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:00.6241|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|2 candidate(s) found for the request path '/' 
+2026-01-28 11:04:00.6241|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Is.Web.Controllers.HomeController.Index (Is.Web)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2026-01-28 11:04:00.6502|1003|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value '(null)' for the request path '/' 
+2026-01-28 11:04:00.6502|1004|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/' 
+2026-01-28 11:04:00.6502|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Is.Web.Controllers.HomeController.Index (Is.Web)' 
+2026-01-28 11:04:00.6564|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:00.7439|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:01.1090|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 10.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:10.0.2' with options: EngineType=SqlServer  
+2026-01-28 11:04:01.1844|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<IsApplicationUser>()
+    .FirstOrDefault(e => EF.Property<string>(e, "Id") == @p)' 
+2026-01-28 11:04:01.3586|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IsApplicationUser>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<IsApplicationUser>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IPropertyBase, int> { [Property: IsApplicationUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IsApplicationUser.AccessFailedCount (int) Required, 1], [Property: IsApplicationUser.Address (string), 2], [Property: IsApplicationUser.ConcurrencyStamp (string) Concurrency, 3], [Property: IsApplicationUser.Email (string) MaxLength(256), 4], [Property: IsApplicationUser.EmailConfirmed (bool) Required, 5], [Property: IsApplicationUser.FirstName (string), 6], [Property: IsApplicationUser.LastName (string), 7], [Property: IsApplicationUser.LockoutEnabled (bool) Required, 8], [Property: IsApplicationUser.LockoutEnd (DateTimeOffset?), 9], [Property: IsApplicationUser.NormalizedEmail (string) Index MaxLength(256), 10], [Property: IsApplicationUser.NormalizedUserName (string) Index MaxLength(256), 11], [Property: IsApplicationUser.PasswordHash (string), 12], [Property: IsApplicationUser.PhoneNumber (string), 13], [Property: IsApplicationUser.PhoneNumberConfirmed (bool) Required, 14], [Property: IsApplicationUser.SecurityStamp (string), 15], [Property: IsApplicationUser.TwoFactorEnabled (bool) Required, 16], [Property: IsApplicationUser.UserName (string) MaxLength(256), 17] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.Address, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.Id == @p) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IPropertyBase, int> { [Property: IsApplicationUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IsApplicationUser.AccessFailedCount (int) Required, 1], [Property: IsApplicationUser.Address (string), 2], [Property: IsApplicationUser.ConcurrencyStamp (string) Concurrency, 3], [Property: IsApplicationUser.Email (string) MaxLength(256), 4], [Property: IsApplicationUser.EmailConfirmed (bool) Required, 5], [Property: IsApplicationUser.FirstName (string), 6], [Property: IsApplicationUser.LastName (string), 7], [Property: IsApplicationUser.LockoutEnabled (bool) Required, 8], [Property: IsApplicationUser.LockoutEnd (DateTimeOffset?), 9], [Property: IsApplicationUser.NormalizedEmail (string) Index MaxLength(256), 10], [Property: IsApplicationUser.NormalizedUserName (string) Index MaxLength(256), 11], [Property: IsApplicationUser.PasswordHash (string), 12], [Property: IsApplicationUser.PhoneNumber (string), 13], [Property: IsApplicationUser.PhoneNumberConfirmed (bool) Required, 14], [Property: IsApplicationUser.SecurityStamp (string), 15], [Property: IsApplicationUser.TwoFactorEnabled (bool) Required, 16], [Property: IsApplicationUser.UserName (string) MaxLength(256), 17] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.Address, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.Id == @p, 
+            False, 
+            MultipleParameters
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: [LIFTABLE Constant: ReaderColumn[] { ReaderColumn<object>, ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<DateTimeOffset>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<object>, ReaderColumn<bool>, ReaderColumn<object> } | Resolver: namelessParameter{0} => new ReaderColumn[]
+        { 
+            new ReaderColumn<object>(
+                False, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("Id"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(0)
+            ), 
+            new ReaderColumn<int>(
+                False, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("AccessFailedCount"), 
+                (dataReader, indexMap) => dataReader.GetInt32(1)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("Address"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(2)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("ConcurrencyStamp"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(3)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("Email"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(4)
+            ), 
+            new ReaderColumn<bool>(
+                False, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("EmailConfirmed"), 
+                (dataReader, indexMap) => dataReader.GetBoolean(5)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("FirstName"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(6)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("LastName"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(7)
+            ), 
+            new ReaderColumn<bool>(
+                False, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("LockoutEnabled"), 
+                (dataReader, indexMap) => dataReader.GetBoolean(8)
+            ), 
+            new ReaderColumn<DateTimeOffset>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("LockoutEnd"), 
+                (dataReader, indexMap) => dataReader.GetFieldValue<DateTimeOffset>(9)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("NormalizedEmail"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(10)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("NormalizedUserName"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(11)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("PasswordHash"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(12)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("PhoneNumber"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(13)
+            ), 
+            new ReaderColumn<bool>(
+                False, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("PhoneNumberConfirmed"), 
+                (dataReader, indexMap) => dataReader.GetBoolean(14)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("SecurityStamp"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(15)
+            ), 
+            new ReaderColumn<bool>(
+                False, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("TwoFactorEnabled"), 
+                (dataReader, indexMap) => dataReader.GetBoolean(16)
+            ), 
+            new ReaderColumn<object>(
+                True, 
+                null, 
+                namelessParameter{0}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindProperty("UserName"), 
+                (dataReader, indexMap) => (object)dataReader.GetString(17)
+            ) 
+        }], 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            IsApplicationUser entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                IsApplicationUser instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(IsApplicationUser);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: IsApplicationUser.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)(string)dataReader.GetFieldValue<object>(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (IsApplicationUser)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: IsApplicationUser | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: IsApplicationUser | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser")]: 
+                            {
+                                return 
+                                {
+                                    IsApplicationUser instance;
+                                    instance = new IsApplicationUser();
+                                    instance.<Id>k__BackingField = (string)dataReader.GetFieldValue<object>(0);
+                                    instance.<AccessFailedCount>k__BackingField = dataReader.GetInt32(1);
+                                    instance.<Address>k__BackingField = dataReader.IsDBNull(2) ? default(string) : (string)dataReader.GetFieldValue<object>(2);
+                                    instance.<ConcurrencyStamp>k__BackingField = dataReader.IsDBNull(3) ? default(string) : (string)dataReader.GetFieldValue<object>(3);
+                                    instance.<Email>k__BackingField = dataReader.IsDBNull(4) ? default(string) : (string)dataReader.GetFieldValue<object>(4);
+                                    instance.<EmailConfirmed>k__BackingField = dataReader.GetBoolean(5);
+                                    instance.<FirstName>k__BackingField = dataReader.IsDBNull(6) ? default(string) : (string)dataReader.GetFieldValue<object>(6);
+                                    instance.<LastName>k__BackingField = dataReader.IsDBNull(7) ? default(string) : (string)dataReader.GetFieldValue<object>(7);
+                                    instance.<LockoutEnabled>k__BackingField = dataReader.GetBoolean(8);
+                                    instance.<LockoutEnd>k__BackingField = dataReader.IsDBNull(9) ? default(DateTimeOffset?) : (DateTimeOffset?)dataReader.GetFieldValue<DateTimeOffset>(9);
+                                    instance.<NormalizedEmail>k__BackingField = dataReader.IsDBNull(10) ? default(string) : (string)dataReader.GetFieldValue<object>(10);
+                                    instance.<NormalizedUserName>k__BackingField = dataReader.IsDBNull(11) ? default(string) : (string)dataReader.GetFieldValue<object>(11);
+                                    instance.<PasswordHash>k__BackingField = dataReader.IsDBNull(12) ? default(string) : (string)dataReader.GetFieldValue<object>(12);
+                                    instance.<PhoneNumber>k__BackingField = dataReader.IsDBNull(13) ? default(string) : (string)dataReader.GetFieldValue<object>(13);
+                                    instance.<PhoneNumberConfirmed>k__BackingField = dataReader.GetBoolean(14);
+                                    instance.<SecurityStamp>k__BackingField = dataReader.IsDBNull(15) ? default(string) : (string)dataReader.GetFieldValue<object>(15);
+                                    instance.<TwoFactorEnabled>k__BackingField = dataReader.GetBoolean(16);
+                                    instance.<UserName>k__BackingField = dataReader.IsDBNull(17) ? default(string) : (string)dataReader.GetFieldValue<object>(17);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: IsApplicationUser | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Is.Domain.Identity.IsApplicationUser")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(IsApplicationUser)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Is.Repository.ApplicationDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)' 
+2026-01-28 11:04:01.4825|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2026-01-28 11:04:01.4825|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2026-01-28 11:04:01.4825|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:01.4825|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:01.4825|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2026-01-28 11:04:01.4825|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:04:01.5050|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (11ms). 
+2026-01-28 11:04:01.5188|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p 
+2026-01-28 11:04:01.7114|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (205ms) [Parameters=[@p='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p 
+2026-01-28 11:04:01.8252|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IsApplicationUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2026-01-28 11:04:01.9266|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:01.9266|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'isDb' on server 'localhost\SQLEXPRESS01' is being disposed after spending 186ms reading results. 
+2026-01-28 11:04:01.9266|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:01.9266|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'isDb' on server 'localhost\SQLEXPRESS01' (0ms). 
+2026-01-28 11:04:01.9654|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<IdentityUserClaim<string>>()
+    .Where(uc => uc.UserId.Equals(@user_Id))
+    .Select(c => c.ToClaim())' 
+2026-01-28 11:04:02.1069|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Claim>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IPropertyBase, int> { [Property: IdentityUserClaim<string>.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUserClaim<string>.ClaimType (string), 1], [Property: IdentityUserClaim<string>.ClaimValue (string), 2], [Property: IdentityUserClaim<string>.UserId (string) Required FK Index, 3] }
+        SELECT a.Id, a.ClaimType, a.ClaimValue, a.UserId
+        FROM AspNetUserClaims AS a
+        WHERE a.UserId == @user_Id) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> Dictionary<IPropertyBase, int> { [Property: IdentityUserClaim<string>.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUserClaim<string>.ClaimType (string), 1], [Property: IdentityUserClaim<string>.ClaimValue (string), 2], [Property: IdentityUserClaim<string>.UserId (string) Required FK Index, 3] }
+        SELECT a.Id, a.ClaimType, a.ClaimValue, a.UserId
+        FROM AspNetUserClaims AS a
+        WHERE a.UserId == @user_Id, 
+        False, 
+        MultipleParameters
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: [LIFTABLE Constant: ReaderColumn[] { ReaderColumn<int>, ReaderColumn<object>, ReaderColumn<object>, ReaderColumn<object> } | Resolver: namelessParameter{0} => new ReaderColumn[]
+    { 
+        new ReaderColumn<int>(
+            False, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>").FindProperty("Id"), 
+            (dataReader, indexMap) => dataReader.GetInt32(0)
+        ), 
+        new ReaderColumn<object>(
+            True, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>").FindProperty("ClaimType"), 
+            (dataReader, indexMap) => (object)dataReader.GetString(1)
+        ), 
+        new ReaderColumn<object>(
+            True, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>").FindProperty("ClaimValue"), 
+            (dataReader, indexMap) => (object)dataReader.GetString(2)
+        ), 
+        new ReaderColumn<object>(
+            False, 
+            null, 
+            namelessParameter{0}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>").FindProperty("UserId"), 
+            (dataReader, indexMap) => (object)dataReader.GetString(3)
+        ) 
+    }], 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        IdentityUserClaim<string> entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            IdentityUserClaim<string> instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(IdentityUserClaim<string>);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: IdentityUserClaim<string>.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (IdentityUserClaim<string>)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: IdentityUserClaim<string> | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: IdentityUserClaim<string> | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>")]: 
+                        {
+                            return 
+                            {
+                                IdentityUserClaim<string> instance;
+                                instance = new IdentityUserClaim<string>();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<ClaimType>k__BackingField = dataReader.IsDBNull(1) ? default(string) : (string)dataReader.GetFieldValue<object>(1);
+                                instance.<ClaimValue>k__BackingField = dataReader.IsDBNull(2) ? default(string) : (string)dataReader.GetFieldValue<object>(2);
+                                instance.<UserId>k__BackingField = (string)dataReader.GetFieldValue<object>(3);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: IdentityUserClaim<string> | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(IdentityUserClaim<string>)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity.ToClaim();
+    }, 
+    contextType: Is.Repository.ApplicationDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)' 
+2026-01-28 11:04:02.1106|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:02.1106|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:02.1106|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2026-01-28 11:04:02.1106|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:04:02.1106|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2026-01-28 11:04:02.1106|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@user_Id='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id 
+2026-01-28 11:04:02.1344|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[@user_Id='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id 
+2026-01-28 11:04:02.1618|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2026-01-28 11:04:02.1711|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:02.1711|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'isDb' on server 'localhost\SQLEXPRESS01' is being disposed after spending 36ms reading results. 
+2026-01-28 11:04:02.1711|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:02.1711|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'isDb' on server 'localhost\SQLEXPRESS01' (0ms). 
+2026-01-28 11:04:02.1997|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:02.2091|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Is.Web.Controllers.HomeController.Index (Is.Web)' 
+2026-01-28 11:04:02.2364|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Is.Web.Controllers.HomeController (Is.Web). 
+2026-01-28 11:04:02.2364|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2026-01-28 11:04:02.2364|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2026-01-28 11:04:02.2364|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2026-01-28 11:04:02.2364|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2026-01-28 11:04:02.2364|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2026-01-28 11:04:02.2364|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.2364|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.2364|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Is.Web.Controllers.HomeController (Is.Web) 
+2026-01-28 11:04:02.2364|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Is.Web.Controllers.HomeController (Is.Web) 
+2026-01-28 11:04:02.2364|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2026-01-28 11:04:02.2364|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2026-01-28 11:04:02.2364|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2026-01-28 11:04:02.2750|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Is.Web.Controllers.HomeController.Index (Is.Web) - Validation state: Valid 
+2026-01-28 11:04:02.3040|103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Is.Web.Controllers.HomeController.Index (Is.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.7225ms. 
+2026-01-28 11:04:02.3040|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2026-01-28 11:04:02.3040|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2026-01-28 11:04:02.3040|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2026-01-28 11:04:02.3040|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.3040|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.3119|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2026-01-28 11:04:02.3341|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Home'. 
+2026-01-28 11:04:02.3341|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2026-01-28 11:04:02.3341|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2026-01-28 11:04:02.3341|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2026-01-28 11:04:02.3341|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2026-01-28 11:04:02.3481|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2026-01-28 11:04:02.3628|2|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 18.2112ms. 
+2026-01-28 11:04:02.4676|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2026-01-28 11:04:02.4676|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2026-01-28 11:04:02.4676|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2026-01-28 11:04:02.6601|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address (area=[],action=[Index],controller=[Home]) 
+2026-01-28 11:04:02.6601|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2026-01-28 11:04:02.6742|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2026-01-28 11:04:02.6742|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address (area=[],action=[Index],controller=[Home]) 
+2026-01-28 11:04:02.6742|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2026-01-28 11:04:02.6742|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2026-01-28 11:04:02.6742|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address (area=[],action=[Index],controller=[MyCoursesCards]) 
+2026-01-28 11:04:02.6742|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /MyCoursesCards and  
+2026-01-28 11:04:02.6742|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /MyCoursesCards 
+2026-01-28 11:04:02.6742|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address (area=[],action=[Index],controller=[Courses]) 
+2026-01-28 11:04:02.6742|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Courses and  
+2026-01-28 11:04:02.6742|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Courses 
+2026-01-28 11:04:02.6889|1|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_LoginPartial' in controller 'Home'. 
+2026-01-28 11:04:02.6889|7|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Could not find a file for view at path '/Views/Home/_LoginPartial.cshtml'. 
+2026-01-28 11:04:02.6889|5|TRACE|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Located compiled view for view at path '/Views/Shared/_LoginPartial.cshtml'. 
+2026-01-28 11:04:02.7218|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} for address (area=[Identity],page=[/Account/Manage/Index]) 
+2026-01-28 11:04:02.7218|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template Identity/Account/Manage for /Account/Manage/Index resulting in /Identity/Account/Manage and  
+2026-01-28 11:04:02.7218|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} with result /Identity/Account/Manage 
+2026-01-28 11:04:02.7218|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address (action=[Logout],controller=[Account]) 
+2026-01-28 11:04:02.7218|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Account/Logout and  
+2026-01-28 11:04:02.7218|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Account/Logout 
+2026-01-28 11:04:02.7377|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2026-01-28 11:04:02.7377|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Antiforgery.AntiforgeryToken.v1'). 
+2026-01-28 11:04:02.7377|6|DEBUG|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An antiforgery cookie token was reused. 
+2026-01-28 11:04:02.7377|100|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address (area=[],action=[Privacy],controller=[Home]) 
+2026-01-28 11:04:02.7377|102|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and  
+2026-01-28 11:04:02.7377|105|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy 
+2026-01-28 11:04:02.7718|1|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2026-01-28 11:04:02.7951|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2026-01-28 11:04:02.7951|31|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:02.8203|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 492.3083ms. 
+2026-01-28 11:04:02.8203|6|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2026-01-28 11:04:02.8203|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.8203|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.8203|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.8203|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2026-01-28 11:04:02.8203|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Is.Web.Controllers.HomeController.Index (Is.Web) in 582.1862ms 
+2026-01-28 11:04:02.8203|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Is.Web.Controllers.HomeController.Index (Is.Web)' 
+2026-01-28 11:04:02.8203|2|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2026-01-28 11:04:02.8203|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 1 with length 986 and flags END_HEADERS. 
+2026-01-28 11:04:02.8203|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 1 with length 3896 and flags NONE. 
+2026-01-28 11:04:02.8315|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2026-01-28 11:04:02.8315|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2026-01-28 11:04:02.8315|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2026-01-28 11:04:02.8476|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'isDb' on server 'localhost\SQLEXPRESS01'. 
+2026-01-28 11:04:02.8476|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (1ms). 
+2026-01-28 11:04:02.9505|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/ - 200 - text/html;+charset=utf-8 3324.8453ms 
+2026-01-28 11:04:02.9594|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 3 with length 752 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:02.9594|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 5 with length 123 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:02.9594|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/_framework/aspnetcore-browser-refresh.js - - - 
+2026-01-28 11:04:02.9791|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 
+2026-01-28 11:04:02.9791|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:02.9917|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS. 
+2026-01-28 11:04:02.9917|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 3 with length 16384 and flags NONE. 
+2026-01-28 11:04:02.9917|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 3 with length 113 and flags NONE. 
+2026-01-28 11:04:03.0070|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware|Script injected: /_framework/aspnetcore-browser-refresh.js 
+2026-01-28 11:04:03.0070|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript;+charset=utf-8 45.8961ms 
+2026-01-28 11:04:03.0070|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2026-01-28 11:04:03.0454|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|3 candidate(s) found for the request path '/lib/bootstrap/dist/js/bootstrap.bundle.min.js' 
+2026-01-28 11:04:03.0454|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'lib/bootstrap/dist/js/bootstrap.bundle.min.js' is valid for the request path '/lib/bootstrap/dist/js/bootstrap.bundle.min.js' 
+2026-01-28 11:04:03.0454|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'lib/bootstrap/dist/js/bootstrap.bundle.min.js' is valid for the request path '/lib/bootstrap/dist/js/bootstrap.bundle.min.js' 
+2026-01-28 11:04:03.0454|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is valid for the request path '/lib/bootstrap/dist/js/bootstrap.bundle.min.js' 
+2026-01-28 11:04:03.0454|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '(null)' 
+2026-01-28 11:04:03.0454|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:03.0454|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:03.0454|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:03.0454|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.0693|0|TRACE|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Range header's value is empty. 
+2026-01-28 11:04:03.0874|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 7 with length 120 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:03.0874|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 9 with length 113 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:03.0874|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 11 with length 117 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:03.0874|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 13 with length 179 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:03.0874|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 15 with length 231 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:03.0874|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/css/bootstrap.min.css - - - 
+2026-01-28 11:04:03.0874|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:03.1289|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - - - 
+2026-01-28 11:04:03.1289|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:03.1289|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/Is.Web.styles.css?v=HAMR2NNvF99EwqcES2JBH2unm-t9kO9zApy58UBFuEI - - - 
+2026-01-28 11:04:03.1289|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:03.1289|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/lib/jquery/dist/jquery.min.js - - - 
+2026-01-28 11:04:03.1289|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:03.1289|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|3 candidate(s) found for the request path '/css/site.css' 
+2026-01-28 11:04:03.1289|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'css/site.css' is valid for the request path '/css/site.css' 
+2026-01-28 11:04:03.1289|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'css/site.css' is valid for the request path '/css/site.css' 
+2026-01-28 11:04:03.1289|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is valid for the request path '/css/site.css' 
+2026-01-28 11:04:03.1289|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '(null)' 
+2026-01-28 11:04:03.1289|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:03.1289|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|3 candidate(s) found for the request path '/Is.Web.styles.css' 
+2026-01-28 11:04:03.1289|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'Is.Web.styles.css' is valid for the request path '/Is.Web.styles.css' 
+2026-01-28 11:04:03.1289|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'Is.Web.styles.css' is valid for the request path '/Is.Web.styles.css' 
+2026-01-28 11:04:03.1289|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is valid for the request path '/Is.Web.styles.css' 
+2026-01-28 11:04:03.1289|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '(null)' 
+2026-01-28 11:04:03.1289|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:03.1389|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|3 candidate(s) found for the request path '/lib/jquery/dist/jquery.min.js' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'lib/jquery/dist/jquery.min.js' is valid for the request path '/lib/jquery/dist/jquery.min.js' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'lib/jquery/dist/jquery.min.js' is valid for the request path '/lib/jquery/dist/jquery.min.js' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is valid for the request path '/lib/jquery/dist/jquery.min.js' 
+2026-01-28 11:04:03.1389|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '(null)' 
+2026-01-28 11:04:03.1389|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:03.1389|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:03.1389|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:03.1389|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:03.1389|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - - - 
+2026-01-28 11:04:03.1389|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2026-01-28 11:04:03.1389|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|3 candidate(s) found for the request path '/js/site.js' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'js/site.js' is valid for the request path '/js/site.js' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'js/site.js' is valid for the request path '/js/site.js' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is valid for the request path '/js/site.js' 
+2026-01-28 11:04:03.1389|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '(null)' 
+2026-01-28 11:04:03.1389|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:03.1389|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|3 candidate(s) found for the request path '/lib/bootstrap/dist/css/bootstrap.min.css' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'lib/bootstrap/dist/css/bootstrap.min.css' is valid for the request path '/lib/bootstrap/dist/css/bootstrap.min.css' 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint '(null)' with route pattern 'lib/bootstrap/dist/css/bootstrap.min.css' is valid for the request path '/lib/bootstrap/dist/css/bootstrap.min.css' 
+2026-01-28 11:04:03.1389|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:03.1389|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is valid for the request path '/lib/bootstrap/dist/css/bootstrap.min.css' 
+2026-01-28 11:04:03.1389|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '(null)' 
+2026-01-28 11:04:03.1389|8|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2026-01-28 11:04:03.1389|5|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {67ac30fc-f742-4e39-8d21-403d86e3ab5c} with purposes ('D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2026-01-28 11:04:03.1810|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:03.1810|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:03.1810|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1810|0|TRACE|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Range header's value is empty. 
+2026-01-28 11:04:03.1810|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:03.1929|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|2|INFO|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Sending file. Request path: 'Is.Web.styles.css'. Physical path: 'D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Debug\net10.0\compressed\3e7gjrrt31-{0}-csmns5m06b-csmns5m06b.gz' 
+2026-01-28 11:04:03.1929|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|0|TRACE|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Range header's value is empty. 
+2026-01-28 11:04:03.1929|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/Is.Web.styles.css?v=HAMR2NNvF99EwqcES2JBH2unm-t9kO9zApy58UBFuEI - 200 1142 text/css 64.4003ms 
+2026-01-28 11:04:03.1929|2|INFO|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Sending file. Request path: 'css/site.css'. Physical path: 'D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Debug\net10.0\compressed\lfi5d537gd-{0}-b9sayid5wm-b9sayid5wm.gz' 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 5 with length 147 and flags END_HEADERS. 
+2026-01-28 11:04:03.1929|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.1929|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.1929|0|TRACE|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Range header's value is empty. 
+2026-01-28 11:04:03.1929|8|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2026-01-28 11:04:03.1929|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|0|TRACE|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Range header's value is empty. 
+2026-01-28 11:04:03.1810|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|0|TRACE|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Range header's value is empty. 
+2026-01-28 11:04:03.1929|2|INFO|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Sending file. Request path: 'js/site.js'. Physical path: 'D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Debug\net10.0\compressed\vcwwsrd2no-{0}-xtxxf3hu2r-xtxxf3hu2r.gz' 
+2026-01-28 11:04:03.1929|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.1929|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 69.1313ms 
+2026-01-28 11:04:03.1929|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 50.4711ms 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 5 with length 15228 and flags NONE. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 11 with length 73 and flags END_HEADERS. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 11 with length 1142 and flags END_STREAM. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 9 with length 63 and flags END_HEADERS. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 9 with length 700 and flags END_STREAM. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 15 with length 63 and flags END_HEADERS. 
+2026-01-28 11:04:03.1929|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 15 with length 264 and flags END_STREAM. 
+2026-01-28 11:04:03.2024|2|INFO|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Debug\net10.0\compressed\hqfpn9k6hy-{0}-493y06b0oq-493y06b0oq.gz' 
+2026-01-28 11:04:03.2024|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.2024|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 227.0710ms 
+2026-01-28 11:04:03.2024|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 13 with length 65 and flags END_HEADERS. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 5656 and flags NONE. 
+2026-01-28 11:04:03.2253|2|INFO|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Debug\net10.0\compressed\nhog6kn4v3-{0}-o1o13a6vjx-o1o13a6vjx.gz' 
+2026-01-28 11:04:03.2253|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.2253|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 99.0260ms 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 13 with length 0 and flags END_STREAM. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 7 with length 66 and flags END_HEADERS. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2026-01-28 11:04:03.2253|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 3495 and flags NONE. 
+2026-01-28 11:04:03.2578|2|INFO|Microsoft.AspNetCore.StaticAssets.StaticAssetsInvoker|Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Web\obj\Debug\net10.0\compressed\hd0qborv1s-{0}-46ein0sx1k-46ein0sx1k.gz' 
+2026-01-28 11:04:03.2578|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+2026-01-28 11:04:03.2578|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 169.3655ms 
+2026-01-28 11:04:03.2578|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2026-01-28 11:04:03.8325|37|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" received HEADERS frame for stream ID 17 with length 60 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2026-01-28 11:04:03.8325|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7083/_vs/browserLink - - - 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending HEADERS frame for stream ID 17 with length 149 and flags END_HEADERS. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 9986 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 10240 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 1806 and flags NONE. 
+2026-01-28 11:04:03.9842|49|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" sending DATA frame for stream ID 17 with length 0 and flags END_STREAM. 
+2026-01-28 11:04:03.9842|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7083/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 162.8621ms 
+2026-01-28 11:04:06.5250|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNIUAI6TG53T" received FIN. 
+2026-01-28 11:04:06.5250|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNIUAI6TG53T" is closed. The last processed stream ID was 17. 
+2026-01-28 11:04:06.5250|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNIUAI6TG53T" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2026-01-28 11:04:06.5250|62|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HNIUAI6TG53T completed. 
+2026-01-28 11:04:06.5315|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNIUAI6TG53T" stopped. 

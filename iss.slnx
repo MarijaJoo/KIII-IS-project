@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/is/">
+    <Project Path="D:/6ti ostanti predmeti za dosreduvanje/is/iss/Is.Web/Is.Web.csproj" />
+    <Project Path="Is.Domain/Is.Domain.csproj" Id="0bfea2cf-a9d0-4a3f-acb3-8f9d3f545342" />
+    <Project Path="Is.Repository/Is.Repository.csproj" Id="90fef83a-f472-4fa5-8288-2f09f645aa1c" />
+    <Project Path="Is.Services/Is.Services.csproj" Id="e5e4d60a-b064-4285-88a7-ca202d654b93" />
+  </Folder>
+</Solution>

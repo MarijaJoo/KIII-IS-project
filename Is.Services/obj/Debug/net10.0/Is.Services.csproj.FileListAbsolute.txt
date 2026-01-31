@@ -1,0 +1,17 @@
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.csproj.AssemblyReference.cache
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.AssemblyInfoInputs.cache
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.AssemblyInfo.cs
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.csproj.CoreCompileInputs.cache
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Services.deps.json
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Services.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Services.pdb
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Domain.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Repository.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Domain.pdb
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\bin\Debug\net10.0\Is.Repository.pdb
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Servi.5B3FCA2A.Up2Date
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\refint\Is.Services.dll
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\Is.Services.pdb
+D:\6ti ostanti predmeti za dosreduvanje\is\iss\Is.Services\obj\Debug\net10.0\ref\Is.Services.dll

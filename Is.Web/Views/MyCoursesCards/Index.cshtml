@@ -1,0 +1,48 @@
+﻿@model Is.Domain.DTO.MyCoursesCardDTO
+
+
+<div class="container">
+
+    <div class="row m-5">
+        <a asp-controller="MyCoursesCards" asp-action="OrderNow" class="btn btn-primary">Order now</a>
+
+    </div>
+
+    <div class="m-5">
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Course name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Sum</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(int i=0;i<Model.courseInMyCourseCards.Count;i++){
+                    var item = Model.courseInMyCourseCards[i];
+                    <tr>
+                         <th scope="row">@(i+1)</th>
+                         <td>@item.Course.CourseName</td>
+                         <td>@item.Course.CoursePrice</td>
+                         <td>@item.Quantity</td>
+                         <td>@(item.Course.CoursePrice*item.Quantity)</td>
+                        <td><a asp-controller="MyCoursesCards" asp-action="DeleteCourseFromMyCoursesCard" asp-route-id="@item.CourseId" class="btn btn-warning">Delete</a></td>
+        </tr>
+                }
+    </tbody>
+    <tfoot>
+                <tr>
+                    <th scope="col">Total Price</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">@Model.TotalPrice</th>
+                </tr>
+    </tfoot>
+
+</table>
+    </div>
+</div>

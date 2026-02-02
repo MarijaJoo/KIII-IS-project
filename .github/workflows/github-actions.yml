@@ -21,6 +21,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./Is.Web
-          file: ./Is.Web/Dockerfile
           push: true
           tags: macccy/iss-web:latest

@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 COPY ["Is.Web/Is.Web.csproj", "Is.Web/"]
 COPY ["Is.Domain/Is.Domain.csproj", "Is.Domain/"]

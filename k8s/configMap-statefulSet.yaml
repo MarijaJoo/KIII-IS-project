@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mssql-config
+  namespace: kiii-app-namespace
+data:
+  MSSQL_PID: "Developer"
+  MSSQL_TCP_PORT: "14331"

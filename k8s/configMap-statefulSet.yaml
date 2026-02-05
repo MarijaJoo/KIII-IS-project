@@ -5,4 +5,4 @@ metadata:
   namespace: kiii-app-namespace
 data:
   MSSQL_PID: "Developer"
-  MSSQL_TCP_PORT: "14331"
+  MSSQL_TCP_PORT: "1433"

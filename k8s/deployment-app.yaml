@@ -17,7 +17,14 @@ spec:
         - name: kiii-container
           image: macccy/kiii-app:latest
           ports:
-            - containerPort: 80
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIORNMENT
+              value: "Development"
+            - name: ASPNETCORE_URLS
+              value: "http://+:8080"
+            - name: DOTNET_SYSTEM_GLOBALIZATION_INVARIANT
+              value: "false"
           envFrom:
             - configMapRef:
                 name: kiii-config

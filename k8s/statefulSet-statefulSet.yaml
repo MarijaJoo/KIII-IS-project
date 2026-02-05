@@ -4,7 +4,7 @@ metadata:
   name: mssql
   namespace: kiii-app-namespace
 spec:
-  serviceName: mssql
+  serviceName: sqlcontainerserver
   replicas: 1
   selector:
     matchLabels:
@@ -18,7 +18,7 @@ spec:
       - name: mssql
         image: mcr.microsoft.com/mssql/server:2022-latest
         ports:
-        - containerPort: 14331
+        - containerPort: 1433
         envFrom:
         - configMapRef:
             name: mssql-config

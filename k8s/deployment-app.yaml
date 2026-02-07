@@ -4,7 +4,7 @@ metadata:
   name: kiii-deployment
   namespace: kiii-app-namespace
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: kiii-app
@@ -25,6 +25,8 @@ spec:
               value: "http://+:8080"
             - name: DOTNET_SYSTEM_GLOBALIZATION_INVARIANT
               value: "false"
+            - name: Logging__LogLevel__Microsoft
+              value: "Information"
           envFrom:
             - configMapRef:
                 name: kiii-config

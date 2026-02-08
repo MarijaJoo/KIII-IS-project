@@ -20,7 +20,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Is.Web/Dockerfile
+      dockerfile: ./Dockerfile
     container_name: kiii-compose-container
     ports:
       - "8081:8080"

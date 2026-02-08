@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MEGtE1HvmDc=",
+  "dgSpecHash": "Np7pg9hK8hI=",
   "success": true,
-  "projectFilePath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj",
+  "projectFilePath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marija\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\10.0.2\\microsoft.aspnetcore.cryptography.internal.10.0.2.nupkg.sha512",
     "C:\\Users\\Marija\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\10.0.2\\microsoft.aspnetcore.cryptography.keyderivation.10.0.2.nupkg.sha512",

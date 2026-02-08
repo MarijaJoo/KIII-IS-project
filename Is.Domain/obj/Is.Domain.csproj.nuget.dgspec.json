@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj": {}
+    "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj": {}
   },
   "projects": {
-    "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj": {
+    "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj",
+        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj",
         "projectName": "Is.Domain",
-        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj",
+        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj",
         "packagesPath": "C:\\Users\\Marija\\.nuget\\packages\\",
-        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\obj\\",
+        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

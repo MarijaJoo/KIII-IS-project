@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\Is.Services.csproj": {}
+    "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Services\\Is.Services.csproj": {}
   },
   "projects": {
-    "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj": {
+    "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj",
+        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj",
         "projectName": "Is.Domain",
-        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj",
+        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj",
         "packagesPath": "C:\\Users\\Marija\\.nuget\\packages\\",
-        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\obj\\",
+        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -350,14 +350,14 @@
         }
       }
     },
-    "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Repository\\Is.Repository.csproj": {
+    "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Repository\\Is.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Repository\\Is.Repository.csproj",
+        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Repository\\Is.Repository.csproj",
         "projectName": "Is.Repository",
-        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Repository\\Is.Repository.csproj",
+        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Repository\\Is.Repository.csproj",
         "packagesPath": "C:\\Users\\Marija\\.nuget\\packages\\",
-        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Repository\\obj\\",
+        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -379,8 +379,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj": {
-                "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj"
+              "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj": {
+                "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj"
               }
             }
           }
@@ -704,14 +704,14 @@
         }
       }
     },
-    "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\Is.Services.csproj": {
+    "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Services\\Is.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\Is.Services.csproj",
+        "projectUniqueName": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Services\\Is.Services.csproj",
         "projectName": "Is.Services",
-        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\Is.Services.csproj",
+        "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Services\\Is.Services.csproj",
         "packagesPath": "C:\\Users\\Marija\\.nuget\\packages\\",
-        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Services\\obj\\",
+        "outputPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -733,11 +733,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj": {
-                "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Domain\\Is.Domain.csproj"
+              "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj": {
+                "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Domain\\Is.Domain.csproj"
               },
-              "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Repository\\Is.Repository.csproj": {
-                "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\is\\iss\\Is.Repository\\Is.Repository.csproj"
+              "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Repository\\Is.Repository.csproj": {
+                "projectPath": "D:\\6ti ostanti predmeti za dosreduvanje\\everythingIn\\KIII-IS-project\\Is.Repository\\Is.Repository.csproj"
               }
             }
           }

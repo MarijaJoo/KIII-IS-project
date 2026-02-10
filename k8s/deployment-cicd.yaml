@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiii-cicd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kiii-cicd
+  template:
+    metadata:
+      labels:
+        app: kiii-cicd
+    spec:
+      containers:
+        - name: kiii-cicd
+          image: macccy/kiii-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082
+          env:
+            - name: ASPNETCORE_URLS
+              value: "http://0.0.0.0:8082"

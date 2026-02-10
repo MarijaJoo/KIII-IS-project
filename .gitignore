@@ -1,0 +1,6 @@
+# ASP.NET appsettings 
+publish/appsettings.json
+publish/appsettings.Development.json
+
+# Kubernetes secrets
+k8s/secrets-app.yaml
